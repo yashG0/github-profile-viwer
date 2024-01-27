@@ -1,9 +1,16 @@
 
 const searchInput = document.querySelector('#search');
 const searchForm = document.querySelector('form');
+const searchButton = document.querySelector('#btn'); // Add this line
 
 // ON FORM SUBMIT ->
 searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formSubmit();
+});
+
+// ON BUTTON CLICK ->
+searchButton.addEventListener('click', (e) => {
     e.preventDefault();
     formSubmit();
 });
