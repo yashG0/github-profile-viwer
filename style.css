@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #292929;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#search-container form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+input {
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+#search{
+    flex: 1;
+}
+#btn {
+    width: 122px;
+    cursor: pointer;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* OUTPUT */
+/* Container for GitHub output */
+#github-output-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GitHub user card */
+.github-card {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left section: User image */
+#left {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Right section: User data */
+#right {
+    flex: 2;
+    padding: 20px;
+}
+
+/* User info section */
+.user-info {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.username {
+    font-size: 18px;
+    color: #555;
+}
+
+.bio {
+    font-size: 16px;
+    color: #777;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.location,
+.company,
+.email {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Stats section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.public-gists,
+.public-repos,
+.followers,
+.following {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+   
+    
+   
+
+    .github-card {
+        flex-direction: column;
+    }
+
+    #left {
+        padding: 10px;
+    }
+
+    .avatar {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #right {
+        padding: 10px;
+    }
+
+    .user-info {
+        margin-bottom: 10px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .username {
+        font-size: 16px;
+    }
+
+    .bio {
+        font-size: 14px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .location,
+    .company,
+    .email {
+        font-size: 12px;
+    }
+
+    .stats {
+        margin-top: 10px;
+    }
+
+    .public-gists,
+    .public-repos,
+    .followers,
+    .following {
+        font-size: 12px;
+    }
+}
