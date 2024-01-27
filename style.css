@@ -149,8 +149,12 @@ input {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 600px) {
-   
-    
+   form{
+    gap: 6px;
+   }
+    input{
+        flex: 1;
+    }
    
 
     .github-card {
